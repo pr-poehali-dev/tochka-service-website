@@ -160,9 +160,33 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Адрес</h3>
-                <p className="text-gray-300">г. Москва, ул. Примерная, д. 1</p>
+                <p className="text-gray-300">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Interactive Map */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-4">Как нас найти</h3>
+              <p className="text-gray-400">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-electric/20">
+                <iframe 
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f7c8a5c4d2e1f3b9a6c7d8e9f0a1b2c&amp;source=constructor"
+                  width="100%" 
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                  title="Карта местоположения сервисного центра Точка в Тамбове"
+                />
+                <div className="absolute inset-0 pointer-events-none border-2 border-electric/30 rounded-2xl animate-glow"></div>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-12">
