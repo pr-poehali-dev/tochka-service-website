@@ -180,7 +180,7 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Адрес</h3>
-                <p className="text-white text-lg font-bold">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
+                <p className="text-electric text-lg font-bold">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
               </CardContent>
             </Card>
           </div>
