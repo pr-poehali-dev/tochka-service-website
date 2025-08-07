@@ -9,12 +9,20 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-tech-dark/90 backdrop-blur-sm border-b border-electric/20">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="https://cdn.poehali.dev/files/b1efe3fc-6ed5-4386-87c3-102f503d2e24.JPG" 
-                alt="Логотип Точка" 
-                className="h-10 w-auto"
-              />
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="https://cdn.poehali.dev/files/b1efe3fc-6ed5-4386-87c3-102f503d2e24.JPG" 
+                  alt="Логотип Точка" 
+                  className="h-10 w-auto"
+                />
+              </div>
+              <div className="hidden sm:flex items-center space-x-2 text-electric">
+                <Icon name="Phone" size={18} />
+                <a href="tel:8-9029-38-33-33" className="text-lg font-medium hover:text-neon-green transition-colors">
+                  8-9029-38-33-33
+                </a>
+              </div>
             </div>
             <div className="hidden md:flex space-x-6">
               <a href="#hero" className="hover:text-electric transition-colors">Главная</a>
@@ -141,7 +149,7 @@ const Index = () => {
                   <Icon name="Phone" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Телефон</h3>
-                <p className="text-gray-300">+7 (XXX) XXX-XX-XX</p>
+                <p className="text-gray-300">8-9029-38-33-33</p>
               </CardContent>
             </Card>
 
