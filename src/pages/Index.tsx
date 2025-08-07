@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
+  const [showContactForm, setShowContactForm] = useState(false);
   return (
     <div className="min-h-screen bg-gradient-to-br from-tech-dark via-gray-900 to-tech-dark text-white">
       {/* Navigation */}
@@ -50,7 +53,11 @@ const Index = () => {
                 Заправка и восстановление картриджей с гарантией качества.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-electric to-neon-green hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3">
+                <Button 
+                  size="lg" 
+                  onClick={() => setShowContactForm(true)}
+                  className="bg-gradient-to-r from-electric to-neon-green hover:scale-105 transform transition-all duration-300 text-lg px-8 py-3"
+                >
                   <Icon name="Phone" size={20} className="mr-2" />
                   Связаться с нами
                 </Button>
@@ -159,7 +166,7 @@ const Index = () => {
                   <Icon name="Mail" size={24} className="text-tech-dark" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Email</h3>
-                <p className="text-gray-300">info@tochka-service.ru</p>
+                <p className="text-gray-300">htclub@bk.ru</p>
               </CardContent>
             </Card>
 
@@ -199,7 +206,11 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-electric to-neon-green hover:scale-105 transform transition-all duration-300 text-lg px-10 py-4">
+            <Button 
+              size="lg" 
+              onClick={() => setShowContactForm(true)}
+              className="bg-gradient-to-r from-electric to-neon-green hover:scale-105 transform transition-all duration-300 text-lg px-10 py-4"
+            >
               <Icon name="MessageCircle" size={20} className="mr-2" />
               Написать нам
             </Button>
@@ -222,6 +233,10 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      {showContactForm && (
+        <ContactForm onClose={() => setShowContactForm(false)} />
+      )}
     </div>
   );
 };
