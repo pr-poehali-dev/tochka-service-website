@@ -41,13 +41,15 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#00FF88',
+					DEFAULT: '#FF7A00',
 					foreground: '#1A1A1A'
 				},
-				'electric': '#006FFF',
+				'electric': '#FF7A00',
 				'tech-gray': '#F5F5F5',
 				'tech-dark': '#1A1A1A',
-				'neon-green': '#00FF88',
+				'neon-green': '#FF5722',
+				'orange-primary': '#FF7A00',
+				'orange-secondary': '#FF5722',
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -94,8 +96,8 @@ export default {
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(0, 111, 255, 0.3)' },
-					'50%': { boxShadow: '0 0 30px rgba(0, 111, 255, 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 122, 0, 0.3)' },
+					'50%': { boxShadow: '0 0 30px rgba(255, 122, 0, 0.6)' }
 				}
 			},
 			animation: {
