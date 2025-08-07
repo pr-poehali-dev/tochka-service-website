@@ -182,15 +182,19 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-electric/10 to-neon-green/10 border-electric/30 hover:border-electric transition-all duration-300">
+            <Card 
+              className="bg-gradient-to-br from-electric/10 to-neon-green/10 border-electric/30 hover:border-electric transition-all duration-300 cursor-pointer hover:scale-105"
+              onClick={() => setShowContactForm(true)}
+            >
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 rounded-full bg-neon-green flex items-center justify-center mx-auto mb-4">
                   <Icon name="Mail" size={24} className="text-tech-dark" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Email</h3>
-                <a href="mailto:htclub@bk.ru" className="text-neon-green text-lg font-bold hover:text-electric transition-colors">
+                <p className="text-neon-green text-lg font-bold">
                   htclub@bk.ru
-                </a>
+                </p>
+                <p className="text-gray-400 text-sm mt-1">Нажмите для отправки письма</p>
               </CardContent>
             </Card>
 
