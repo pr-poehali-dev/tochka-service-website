@@ -90,7 +90,7 @@ const Index = () => {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-glow">
                 <img 
-                  src="/img/e8e49ade-174c-480c-bd47-c54aea4d490a.jpg" 
+                  src="/img/2def43d6-09b8-4076-a8ff-2575a29f0342.jpg" 
                   alt="Современный сервисный центр" 
                   className="w-full h-[500px] object-cover"
                 />
