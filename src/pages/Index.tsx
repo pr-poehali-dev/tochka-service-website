@@ -156,7 +156,9 @@ const Index = () => {
                   <Icon name="Phone" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Телефон</h3>
-                <p className="text-gray-300">8-9029-38-33-33</p>
+                <a href="tel:8-9029-38-33-33" className="text-electric text-lg font-bold hover:text-neon-green transition-colors">
+                  8-9029-38-33-33
+                </a>
               </CardContent>
             </Card>
 
@@ -166,7 +168,9 @@ const Index = () => {
                   <Icon name="Mail" size={24} className="text-tech-dark" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Email</h3>
-                <p className="text-gray-300">htclub@bk.ru</p>
+                <a href="mailto:htclub@bk.ru" className="text-neon-green text-lg font-bold hover:text-electric transition-colors">
+                  htclub@bk.ru
+                </a>
               </CardContent>
             </Card>
 
@@ -176,7 +180,7 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Адрес</h3>
-                <p className="text-gray-300">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
+                <p className="text-white text-lg font-bold">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
               </CardContent>
             </Card>
           </div>
