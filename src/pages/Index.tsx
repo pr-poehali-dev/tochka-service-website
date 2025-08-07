@@ -20,11 +20,35 @@ const Index = () => {
                   className="h-10 w-auto"
                 />
               </div>
-              <div className="hidden sm:flex items-center space-x-2 text-electric">
-                <Icon name="Phone" size={18} />
-                <a href="tel:8-9029-38-33-33" className="text-lg font-medium hover:text-neon-green transition-colors">
-                  8-9029-38-33-33
-                </a>
+              <div className="hidden sm:flex items-center space-x-4">
+                <div className="flex items-center space-x-2 text-electric">
+                  <Icon name="Phone" size={18} />
+                  <a href="tel:8-9029-38-33-33" className="text-lg font-medium hover:text-neon-green transition-colors">
+                    8-9029-38-33-33
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <a 
+                    href="https://wa.me/79029383333?text=Здравствуйте! Хочу узнать о ваших услугах" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-lg transition-colors"
+                    title="Написать в WhatsApp"
+                  >
+                    <Icon name="MessageCircle" size={16} />
+                    <span className="text-sm font-medium">WhatsApp</span>
+                  </a>
+                  <a 
+                    href="https://t.me/79029383333" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg transition-colors"
+                    title="Написать в Telegram"
+                  >
+                    <Icon name="Send" size={16} />
+                    <span className="text-sm font-medium">Telegram</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="hidden md:flex space-x-6">
