@@ -52,7 +52,7 @@ const Index = () => {
                 Профессиональный ремонт компьютеров, ноутбуков и оргтехники. 
                 Заправка и восстановление картриджей с гарантией качества.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-start">
                 <Button 
                   size="lg" 
                   onClick={() => setShowContactForm(true)}
@@ -60,10 +60,6 @@ const Index = () => {
                 >
                   <Icon name="Phone" size={20} className="mr-2" />
                   Связаться с нами
-                </Button>
-                <Button variant="outline" size="lg" className="border-electric text-electric hover:bg-electric hover:text-white transition-all duration-300 text-lg px-8 py-3">
-                  <Icon name="Info" size={20} className="mr-2" />
-                  Узнать больше
                 </Button>
               </div>
             </div>
