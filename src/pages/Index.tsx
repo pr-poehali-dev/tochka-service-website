@@ -198,13 +198,20 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-electric/10 to-neon-green/10 border-electric/30 hover:border-electric transition-all duration-300 md:col-span-2 lg:col-span-1">
+            <Card 
+              className="bg-gradient-to-br from-electric/10 to-neon-green/10 border-electric/30 hover:border-electric transition-all duration-300 md:col-span-2 lg:col-span-1 cursor-pointer hover:scale-105"
+              onClick={() => {
+                const address = encodeURIComponent("г. Тамбов, Бульвар Энтузиастов 1Г");
+                window.open(`https://yandex.ru/maps/?text=${address}`, '_blank');
+              }}
+            >
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 rounded-full bg-electric flex items-center justify-center mx-auto mb-4">
                   <Icon name="MapPin" size={24} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">Адрес</h3>
                 <p className="text-electric text-lg font-bold">г. Тамбов, Бульвар Энтузиастов 1"Г"</p>
+                <p className="text-gray-400 text-sm mt-1">Нажмите для просмотра на карте</p>
               </CardContent>
             </Card>
           </div>
